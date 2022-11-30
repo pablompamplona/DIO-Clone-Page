@@ -9,7 +9,6 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-
 `
 
 export const Row = styled.div`
@@ -49,10 +48,10 @@ export const BuscarInputContainer = styled.div`
 export const Menu = styled.a`
     font-family: 'Open Sans';
     font-style: normal;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 25px;
     color: #FFFFFF;
-    margin-right: 12px;
+    margin-right: 25px;
     text-decoration: none;
 `
 
