@@ -4,8 +4,10 @@ import logo from '../../assets/logo-dio.png';
 import { Button } from '../Button';
 import { UserPicture } from '../UserInfo/styles';
 import { BuscarInputContainer, Container, Input, Menu, MenuRight, Row, Wrapper } from './styles';
+import { IHeader } from './types'
 
-const Header = ({autenticado}) => {
+
+const Header = ({autenticado}: IHeader) => {
 
   const navigate = useNavigate();
 
