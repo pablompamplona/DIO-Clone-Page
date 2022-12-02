@@ -29,15 +29,20 @@ const Login = () => {
     const onSubmit = async (formData: IFormData) => {
         try{
             const { data } = await api.get(`users?email=${formData.email}&senha=${formData.password}`);
-            console.log('retorno api', data)
-        } catch {
+            if (data.length && data[0].id) {
+                navigate('/feed')
+                return
+            }
+            alert('Usuário ou senha inválido')
+
+        } catch (e){
             alert('Houve um erro. Tente novamente.')
         }
     };
 
-    const handleClickSignIn = () => {
-        navigate('/feed')
-    }
+    // const handleClickSignIn = () => {
+    //     navigate('/feed')
+    // }
 
     return (
         <>
